@@ -27,19 +27,34 @@ public class TestPersonne {
 		 cette façon de faire est très fastidieuse parce qu'elle oblige 
 		 * à retaper toutes les coordonnées alors que nous les avions déja rentré dans 
 		 * TestAdressePostale. Il y'a donc beaucoup trop de ligne.*/ 
-		Personne guy1 = new Personne("Quiniou","Chloe",new AdressePostale(7,"rue de la france libre",29000,"Quimper"));
+		
+		
+		
+		/*Personne guy1 = new Personne("Quiniou","Chloe",new AdressePostale(7,"rue de la france libre",29000,"Quimper"));
 
 		Personne guy2 = new Personne("Fournier","Michel",new AdressePostale(8,"impasse de Guenole",44300,"Nantes"));
 	
 		
-		/* cette façon de faire est moins fastidieuse parce que la première car il 
+		 cette façon de faire est moins fastidieuse parce que la première car il 
 		 * n'y a pas utant de lignes à taper.
 		 *  Elle reste assez longue car on doit tout de même retaper toutes les 
 		 *  informations alors qu'elles sont déja enregistrées dans TestAdresse.
 		 *  Il y'a donc moins de ligne certe, mais nous perdons du temps 
 		 *  et des lignes puisque les informations sont déjà notées autre part.
+		 *  
+		 *  
 		 */ 
-		 
+		
+		AdressePostale adr1=new AdressePostale(7,"Rue de la France Libre",29000,"Quimper");
+		
+		AdressePostale adr2=new AdressePostale(8,"Impasse de Guenole",44300,"Quimper");
+		
+		Personne guy1 = new Personne("Quiniou","Chloé");
+		guy1.setAdresse(adr1);
+		Personne guy2= new Personne("Fournier","Michel");
+		guy2.setAdresse(adr2);
+		
+		
 	}
 
 }
