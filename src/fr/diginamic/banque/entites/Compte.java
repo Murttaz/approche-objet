@@ -11,7 +11,7 @@ public class Compte {
 	}
 	
 	public String toString() {
-		return numero+" "+solde;
+		return numero+","+solde;
 	}
 
 	public int getNumero() {
