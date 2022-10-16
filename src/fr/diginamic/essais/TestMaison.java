@@ -21,6 +21,7 @@ public class TestMaison {
 		//maison.ajouterpiece(new Chambre(1, -9.5));
 		// il y a d'autres erreurs
 		
+		//mesure de la maison de chez mes parents à Nantes
 		maison.ajouterpiece(new Chambre(1, 9.5));
 		maison.ajouterpiece(new Cuisine(0, 15.5));
 		maison.ajouterpiece(new Sdb(1, 2.5));
