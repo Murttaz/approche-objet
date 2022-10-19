@@ -35,4 +35,12 @@ public class Ville {
 		return "Ville [Name=" + Name + ", nbHabitant=" + nbHabitant + "]";
 	}
 
+	@Override
+	public boolean equals(Object obj) {
+		if (!(obj instanceof Ville)) {
+			return false;
+		}
+		Ville o = (Ville) obj;
+		return o.getName().equals(this.Name) && o.getNbHabitant() == this.nbHabitant;
+	}
 }
