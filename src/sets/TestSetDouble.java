@@ -1,5 +1,6 @@
 package sets;
 
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Iterator;
 
@@ -16,22 +17,25 @@ public class TestSetDouble {
 		nombre.add(48.5);
 		nombre.add(0.01);
 		
-		//for (Double nbr : nombre ) {
-		//	System.out.println(nbr);
-		//}
-		
+		for (Double nbr : nombre ) {
+			System.out.println(nbr);
+		}
+		System.out.println("-------------------");
 		Iterator<Double> it= nombre.iterator();
 		
-		double max= Double.MIN_VALUE;
-		double min;
-		while(it.hasNext()) {
-			if (max<it.next()) {
-				max=it.next();
-			}
+		double max= Collections.max(nombre);
+		double min=Collections.min(nombre);
+		
 			
-		}
+		//test
 		System.out.println(max);
-	
+		nombre.remove(min);
+		System.out.println("-------------------");
+		for (Double nbr2 : nombre ) {
+			System.out.println(nbr2);
+		}
+		
+		// fin exo 1 hashset
 	}
 
 }
